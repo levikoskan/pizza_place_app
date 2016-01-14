@@ -6,6 +6,12 @@
   <li><%= @pizza_place.city %></li>
   <li><%= @pizza_place.state %></li>
   <li><%= @pizza_place.zip_code %></li>
+  <li>
+    <% @pizza_place.reviews.each do |review| %>
+    <h3><%= review.title %></h3>
+    <p><%= review.body %></p>
+    <% end %>
+  </li>
 </ul>
 
 <%= link_to 'Edit', edit_pizza_place_path(@pizza_place) %> |
