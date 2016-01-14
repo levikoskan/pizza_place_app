@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+  <li><%= @pizza_place.name %></li>
+  <li><%= @pizza_place.address %></li>
+  <li><%= @pizza_place.city %></li>
+  <li><%= @pizza_place.state %></li>
+  <li><%= @pizza_place.zip_code %></li>
+</ul>
+
+<%= link_to 'Edit', edit_pizza_place_path(@pizza_place) %> |
+<%= link_to 'Back', pizza_places_path %>
